@@ -104,7 +104,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 bg-secondary">
+      <section className="py-14 md:py-20 bg-secondary">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-3">
@@ -123,9 +123,9 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
             {/* Contact Info */}
             <FadeIn className="lg:col-span-1">
               <h2 className="text-2xl font-bold text-foreground mb-8">
@@ -188,7 +188,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-secondary">
+      <section className="py-14 md:py-20 pb-24 md:pb-20 bg-secondary">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <FadeIn>

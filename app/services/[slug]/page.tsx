@@ -66,7 +66,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-foreground">
+      <section className="relative py-14 md:py-20 bg-foreground">
         <div className="absolute inset-0 z-0">
           <Image
             src={service.image}
@@ -90,7 +90,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               </div>
               <div>
                 <p className="text-primary-foreground text-sm font-medium">Our Services</p>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-background">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-background">
                   {service.title}
                 </h1>
               </div>
@@ -117,9 +117,9 @@ export default async function ServicePage({ params }: ServicePageProps) {
       </section>
 
       {/* Main Content */}
-      <section className="py-20">
+      <section className="py-14 md:py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
             {/* Service Details */}
             <div className="lg:col-span-2">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
@@ -166,7 +166,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-secondary">
+      <section className="py-14 md:py-20 bg-secondary">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-12 text-center">
             Why Choose S&T Construction for {service.title}
@@ -189,7 +189,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       </section>
 
       {/* Related Services */}
-      <section className="py-20">
+      <section className="py-14 md:py-20 pb-24 md:pb-20">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             Other Services You May Need

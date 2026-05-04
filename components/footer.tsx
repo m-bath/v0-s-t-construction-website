@@ -4,42 +4,44 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background">
-      <div className="container mx-auto px-4 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <footer className="bg-foreground text-background pb-20 lg:pb-0">
+      <div className="container mx-auto px-4 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
-          <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-md">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <div className="flex items-center gap-2 mb-5">
+              <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-md shrink-0">
                 <span className="text-primary-foreground font-bold text-lg">S&T</span>
               </div>
-              <div>
-                <span className="font-bold text-lg">S&T Construction</span>
-              </div>
+              <span className="font-bold text-lg">S&T Construction</span>
             </div>
-            <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Calgary&apos;s trusted construction partner with over 15 years of experience 
+            <p className="text-background/70 text-sm leading-relaxed mb-5">
+              Calgary&apos;s trusted construction partner with over 15 years of experience
               delivering quality residential and commercial projects.
             </p>
-            <div className="flex flex-col gap-3 text-sm">
+            <div className="flex flex-col gap-2.5 text-sm">
               <a href="tel:+14035551234" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
-                <Phone className="h-4 w-4" />
+                <Phone className="h-4 w-4 shrink-0" />
                 (403) 555-1234
               </a>
               <a href="mailto:info@stconstruction.ca" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
-                <Mail className="h-4 w-4" />
+                <Mail className="h-4 w-4 shrink-0" />
                 info@stconstruction.ca
               </a>
+              <div className="flex items-start gap-2 text-background/70">
+                <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
+                <span>215 Magnolia Drive SE<br />Calgary, AB</span>
+              </div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold text-lg mb-6">Our Services</h3>
-            <ul className="flex flex-col gap-3">
+            <h3 className="font-semibold text-base mb-4">Our Services</h3>
+            <ul className="flex flex-col gap-2.5">
               {services.slice(0, 6).map((service) => (
                 <li key={service.id}>
-                  <Link 
+                  <Link
                     href={`/services/${service.id}`}
                     className="text-sm text-background/70 hover:text-background transition-colors"
                   >
@@ -52,58 +54,49 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-6">Quick Links</h3>
-            <ul className="flex flex-col gap-3">
-              <li>
-                <Link href="/" className="text-sm text-background/70 hover:text-background transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-sm text-background/70 hover:text-background transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm text-background/70 hover:text-background transition-colors">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/quote" className="text-sm text-background/70 hover:text-background transition-colors">
-                  Free Quote
-                </Link>
-              </li>
+            <h3 className="font-semibold text-base mb-4">Quick Links</h3>
+            <ul className="flex flex-col gap-2.5">
+              {[
+                { href: "/",        label: "Home" },
+                { href: "/about",   label: "About Us" },
+                { href: "/contact", label: "Contact" },
+                { href: "/quote",   label: "Free Quote" },
+              ].map(({ href, label }) => (
+                <li key={href}>
+                  <Link href={href} className="text-sm text-background/70 hover:text-background transition-colors">
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Service Areas & Hours */}
+          {/* Hours */}
           <div>
-            <h3 className="font-semibold text-lg mb-6">Service Areas</h3>
-            <div className="flex items-start gap-2 text-sm text-background/70 mb-4">
-              <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-              <span>Calgary, Airdrie, Chestermere, Okotoks, and surrounding areas</span>
-            </div>
-            <h3 className="font-semibold text-lg mb-4 mt-8">Business Hours</h3>
-            <div className="flex items-start gap-2 text-sm text-background/70">
+            <h3 className="font-semibold text-base mb-4">Business Hours</h3>
+            <div className="flex items-start gap-2 text-sm text-background/70 mb-5">
               <Clock className="h-4 w-4 mt-0.5 shrink-0" />
-              <div>
-                <p>Mon - Fri: 7:00 AM - 6:00 PM</p>
-                <p>Sat: 8:00 AM - 4:00 PM</p>
+              <div className="space-y-1">
+                <p>Mon – Fri: 7:00 AM – 6:00 PM</p>
+                <p>Sat: 8:00 AM – 4:00 PM</p>
                 <p>Sun: Closed</p>
               </div>
             </div>
+            <h3 className="font-semibold text-base mb-3">Service Areas</h3>
+            <p className="text-sm text-background/70">
+              Calgary, Airdrie, Chestermere, Okotoks &amp; surrounding communities
+            </p>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-background/10 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-background/10 mt-10 pt-7">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-center sm:text-left">
             <p className="text-sm text-background/60">
               &copy; {new Date().getFullYear()} S&T Construction. All rights reserved.
             </p>
             <p className="text-sm text-background/60">
-              Licensed & Insured | Calgary, Alberta
+              Licensed &amp; Insured | Calgary, Alberta
             </p>
           </div>
         </div>

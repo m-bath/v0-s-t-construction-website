@@ -1,32 +1,15 @@
 import { Award, Users, Home, Clock } from "lucide-react";
 
 const stats = [
-  {
-    icon: Clock,
-    value: "15+",
-    label: "Years of Experience",
-  },
-  {
-    icon: Home,
-    value: "500+",
-    label: "Projects Completed",
-  },
-  {
-    icon: Users,
-    value: "100%",
-    label: "Client Satisfaction",
-  },
-  {
-    icon: Award,
-    value: "Licensed",
-    label: "& Fully Insured",
-  },
+  { icon: Clock,  value: "15+",      label: "Years of Experience" },
+  { icon: Home,   value: "500+",     label: "Projects Completed" },
+  { icon: Users,  value: "100%",     label: "Client Satisfaction" },
+  { icon: Award,  value: "Licensed", label: "& Fully Insured" },
 ];
 
 export function StatsSection() {
   return (
-    <section className="py-16 bg-primary relative overflow-hidden">
-      {/* Subtle diagonal pattern */}
+    <section className="py-12 sm:py-16 bg-primary relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -35,16 +18,16 @@ export function StatsSection() {
         }}
       />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-primary-foreground/20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-primary-foreground/15 rounded-2xl overflow-hidden">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center px-6 py-2 first:pl-0 last:pr-0">
-              <div className="flex items-center justify-center w-14 h-14 bg-primary-foreground/15 rounded-xl mx-auto mb-4 border border-primary-foreground/20">
-                <stat.icon className="h-7 w-7 text-primary-foreground" />
+            <div key={index} className="text-center px-4 py-6 sm:px-6 bg-primary">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-primary-foreground/15 rounded-xl mx-auto mb-3 sm:mb-4 border border-primary-foreground/20">
+                <stat.icon className="h-6 w-6 sm:h-7 sm:w-7 text-primary-foreground" />
               </div>
-              <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-1 tracking-tight">
+              <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-foreground mb-1 tracking-tight">
                 {stat.value}
               </p>
-              <p className="text-primary-foreground/75 text-sm font-medium">
+              <p className="text-primary-foreground/75 text-xs sm:text-sm font-medium">
                 {stat.label}
               </p>
             </div>

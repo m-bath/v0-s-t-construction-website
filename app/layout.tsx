@@ -3,6 +3,7 @@ import { Inter, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { MobileCTA } from '@/components/mobile-cta'
 import './globals.css'
 
 const inter = Inter({ 
@@ -68,6 +69,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <MobileCTA />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
