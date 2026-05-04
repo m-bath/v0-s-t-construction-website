@@ -87,8 +87,8 @@ const faqs = [
     a: "Simply fill out the contact form, call us at (403) 555-1234, or request a free quote online. We'll schedule a site visit and provide a detailed estimate within a few business days.",
   },
   {
-    q: "Do you provide a warranty on your work?",
-    a: "Yes. We stand behind our craftsmanship with a workmanship warranty on all projects, plus manufacturer warranties on materials. Specific terms are outlined in your project contract.",
+    q: "What quality standards do you follow?",
+    a: "We follow all applicable Alberta Building Code requirements and use quality-grade materials on every project. Our team is licensed and experienced to ensure work is done right the first time, and we conduct thorough inspections throughout each project.",
   },
   {
     q: "What is MEP consulting and do I need it?",

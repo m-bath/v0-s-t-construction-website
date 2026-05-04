@@ -3,14 +3,14 @@ import { FadeIn } from "@/components/fade-in";
 
 const testimonials = [
   {
-    name: "Michael Thompson",
+    name: "Rajiv & Priya Sharma",
     location: "Calgary, AB",
     project: "Basement Development",
     rating: 5,
     text: "S&T Construction transformed our unfinished basement into an amazing entertainment space. Tejpal and his team were professional, punctual, and the quality exceeded our expectations.",
   },
   {
-    name: "Sarah Chen",
+    name: "Amandeep Gill",
     location: "Airdrie, AB",
     project: "Complete Home Renovation",
     rating: 5,
@@ -24,7 +24,7 @@ const testimonials = [
     text: "After the hailstorm damaged our roof and siding, S&T responded quickly and handled everything professionally — from insurance coordination to final inspection. Our home looks better than ever.",
   },
   {
-    name: "Jennifer Park",
+    name: "Harpreet Kaur",
     location: "Calgary, AB",
     project: "HVAC Installation",
     rating: 5,
@@ -45,7 +45,7 @@ const testimonials = [
     text: "S&T installed hardwood floors throughout our main floor and painted the entire interior. The attention to detail was incredible — every corner, every trim piece was perfect. We've already referred them to three neighbours.",
   },
   {
-    name: "Tom & Maria Hutchinson",
+    name: "Gurpreet & Simran Dhaliwal",
     location: "Cochrane, AB",
     project: "Basement Development & Plumbing",
     rating: 5,

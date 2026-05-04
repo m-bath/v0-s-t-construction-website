@@ -95,7 +95,7 @@ export default function QuotePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
             {[
               { value: "15+",      label: "Years Experience" },
-              { value: "500+",     label: "Projects Completed" },
+              { value: "Calgary",  label: "Based & Trusted" },
               { value: "100%",     label: "Satisfaction" },
               { value: "Licensed", label: "& Insured" },
             ].map(({ value, label }) => (

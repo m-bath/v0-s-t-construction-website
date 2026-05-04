@@ -20,7 +20,7 @@ export const services: Service[] = [
       "Electrical and plumbing rough-ins",
       "Permit acquisition and inspections",
       "Quality finishing and trim work",
-      "10-year structural warranty"
+      "Quality materials and finishes"
     ],
     image: "/images/basement-development.jpg",
     icon: "home"
@@ -68,7 +68,7 @@ export const services: Service[] = [
       "Emergency roof repairs",
       "Ice dam prevention",
       "Proper attic ventilation",
-      "25-year manufacturer warranty"
+      "Premium quality roofing materials"
     ],
     image: "/images/roofing.jpg",
     icon: "roof"

@@ -48,48 +48,76 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Owner Section */}
+      {/* Partners Section */}
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="relative">
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden max-w-sm mx-auto lg:max-w-none">
-                <Image
-                  src="/images/tejpal-singh.jpg"
-                  alt="Tejpal Singh - Owner of S&T Construction"
-                  fill
-                  className="object-cover"
-                />
+          <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+            <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-3">Leadership</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Meet the Founders
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg">
+              S&T Construction is built on the combined expertise and vision of two dedicated industry professionals.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
+            {/* Tejpal Singh */}
+            <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="relative shrink-0 w-full sm:w-48">
+                <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/tejpal-singh.jpg"
+                    alt="Tejpal Singh - Co-Founder of S&T Construction"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-3 -right-3 bg-primary text-primary-foreground px-3 py-2 rounded-lg shadow-lg hidden sm:block">
+                  <p className="text-xl font-bold leading-none">15+</p>
+                  <p className="text-xs opacity-90">Yrs Exp.</p>
+                </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl shadow-lg hidden sm:block">
-                <p className="text-3xl sm:text-4xl font-bold">15+</p>
-                <p className="text-sm opacity-90">Years Experience</p>
+              <div className="flex-1">
+                <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-1">Co-Founder & Director</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">Tejpal Singh</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
+                  A licensed construction contractor with over 15 years of hands-on experience in residential and commercial construction. Tejpal oversees project execution, quality control, and client relations across all S&T projects.
+                </p>
+                <div className="grid grid-cols-1 gap-2">
+                  {["Licensed Contractor", "MEP Specialist", "Fully Insured", "WCB Coverage"].map((item) => (
+                    <div key={item} className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary shrink-0" />
+                      <span className="text-foreground text-sm">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-            <div>
-              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">Meet the Owner</p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-5">
-                Tejpal Singh
-              </h2>
-              <p className="text-base sm:text-lg text-muted-foreground mb-5 leading-relaxed">
-                Tejpal Singh is a licensed construction contractor with over 15 years
-                of hands-on experience in residential and commercial construction.
-                Born in India and now a proud Calgarian, Tejpal founded S&T Construction
-                with a vision to bring exceptional craftsmanship and honest service to
-                the Calgary construction industry.
-              </p>
-              <p className="text-base sm:text-lg text-muted-foreground mb-7 leading-relaxed">
-                With expertise spanning basement development, MEP systems, roofing,
-                and complete home renovations, Tejpal personally oversees every project
-                to ensure it meets his exacting standards.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {["Licensed Contractor", "Fully Insured", "MEP Specialist", "WCB Coverage"].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary shrink-0" />
-                    <span className="text-foreground text-sm sm:text-base">{item}</span>
+
+            {/* Shey Pahwa */}
+            <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="relative shrink-0 w-full sm:w-48">
+                <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden bg-secondary flex items-center justify-center">
+                  <div className="flex items-center justify-center w-20 h-20 rounded-full bg-primary/10">
+                    <span className="text-4xl font-bold text-primary">SP</span>
                   </div>
-                ))}
+                </div>
+              </div>
+              <div className="flex-1">
+                <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-1">Co-Founder & Director</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">Shey Pahwa</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
+                  Shey Pahwa brings extensive expertise in construction management, business operations, and client development. With a strong background in project planning and team leadership, Shey drives the strategic growth and operational excellence of S&T Construction.
+                </p>
+                <div className="grid grid-cols-1 gap-2">
+                  {["Construction Management", "Business Development", "Project Planning", "Team Leadership"].map((item) => (
+                    <div key={item} className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-primary shrink-0" />
+                      <span className="text-foreground text-sm">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -194,7 +222,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {[
               { icon: Award,  value: "15+",      label: "Years Experience" },
-              { icon: Users,  value: "500+",     label: "Happy Clients" },
+              { icon: Users,  value: "Calgary",  label: "Based & Trusted" },
               { icon: Clock,  value: "100%",     label: "On-Time Delivery" },
               { icon: Shield, value: "Licensed", label: "& Insured" },
             ].map(({ icon: Icon, value, label }) => (
