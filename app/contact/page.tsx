@@ -25,8 +25,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["infosntbuilder@gmail.com"],
-    action: "mailto:infosntbuilder@gmail.com",
+    details: ["info@sntbuilder.com"],
+    action: "mailto:info@sntbuilder.com",
   },
   {
     icon: Building,

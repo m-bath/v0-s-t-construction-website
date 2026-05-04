@@ -48,9 +48,9 @@ export function Header() {
                 <Phone className="h-3 w-3" />
                 (587) 973-6792
               </a>
-              <a href="mailto:infosntbuilder@gmail.com" className="flex items-center gap-1.5 hover:text-background transition-colors">
+              <a href="mailto:info@sntbuilder.com" className="flex items-center gap-1.5 hover:text-background transition-colors">
                 <Mail className="h-3 w-3" />
-                infosntbuilder@gmail.com
+                info@sntbuilder.com
               </a>
             </div>
             <div className="flex items-center gap-1.5">
