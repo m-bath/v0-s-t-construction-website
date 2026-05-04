@@ -25,9 +25,9 @@ export function Footer() {
                 <Phone className="h-4 w-4 shrink-0" />
                 (587) 973-6792
               </a>
-              <a href="mailto:sntbuildersinfo@gmail.com" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
+              <a href="mailto:infosntbuilder@gmail.com" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
                 <Mail className="h-4 w-4 shrink-0" />
-                sntbuildersinfo@gmail.com
+                infosntbuilder@gmail.com
               </a>
               <div className="flex items-start gap-2 text-background/70">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
