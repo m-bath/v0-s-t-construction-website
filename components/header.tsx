@@ -25,6 +25,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const openMenu = () => {
@@ -192,22 +193,33 @@ export function Header() {
                 >
                   Home
                 </Link>
-                <div className="text-sm font-semibold text-foreground">Services</div>
-                <div className="grid grid-cols-2 gap-2 pl-1">
-                  {services.map((service) => {
-                    const Icon = iconMap[service.icon] || Home;
-                    return (
-                      <Link
-                        key={service.id}
-                        href={`/services/${service.id}`}
-                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors py-1"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        <Icon className="h-3.5 w-3.5 text-primary shrink-0" />
-                        {service.title}
-                      </Link>
-                    );
-                  })}
+                {/* Collapsible Services */}
+                <div>
+                  <button
+                    className="flex items-center justify-between w-full text-sm font-semibold text-foreground py-1"
+                    onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  >
+                    Services
+                    <ChevronDown className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileServicesOpen && (
+                    <div className="grid grid-cols-2 gap-x-2 gap-y-1 pt-3 pl-1">
+                      {services.map((service) => {
+                        const Icon = iconMap[service.icon] || Home;
+                        return (
+                          <Link
+                            key={service.id}
+                            href={`/services/${service.id}`}
+                            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors py-1.5"
+                            onClick={() => { setMobileMenuOpen(false); setMobileServicesOpen(false); }}
+                          >
+                            <Icon className="h-3.5 w-3.5 text-primary shrink-0" />
+                            {service.title}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
                 <Link
                   href="/about"
