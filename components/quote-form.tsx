@@ -23,11 +23,26 @@ export function QuoteForm({ preselectedService, variant = "full" }: QuoteFormPro
     message: "",
   });
 
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error("Failed to send");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (
@@ -154,9 +169,10 @@ export function QuoteForm({ preselectedService, variant = "full" }: QuoteFormPro
             </div>
           )}
 
-          <Button type="submit" size="lg" className="w-full">
+          {error && <p className="text-sm text-destructive text-center">{error}</p>}
+          <Button type="submit" size="lg" className="w-full" disabled={loading}>
             <Send className="mr-2 h-5 w-5" />
-            Request Free Consultation
+            {loading ? "Sending..." : "Request Free Consultation"}
           </Button>
 
           <p className="text-xs text-muted-foreground text-center">
