@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Phone, Mail, MapPin, Clock, Building } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Building, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -37,6 +37,12 @@ const contactInfo = [
     icon: MapPin,
     title: "Service Area",
     details: ["Calgary, Airdrie, Chestermere", "Okotoks & Surrounding Areas"],
+  },
+  {
+    icon: Globe,
+    title: "Website",
+    details: ["www.sntbuilder.com"],
+    action: "https://www.sntbuilder.com",
   },
   {
     icon: Clock,
