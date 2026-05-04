@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -67,8 +68,8 @@ export function Header() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-lg shadow-sm">
-                <span className="text-primary-foreground font-bold text-base leading-none">S&T</span>
+              <div className="flex items-center justify-center w-10 h-10 rounded-lg overflow-hidden shadow-sm">
+                <Image src="/images/snt_logo.png" alt="S&T Construction" width={40} height={40} className="object-contain" />
               </div>
               <div className="hidden sm:block">
                 <span className="font-bold text-lg text-foreground leading-tight">S&T Construction</span>

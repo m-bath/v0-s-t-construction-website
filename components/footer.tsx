@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/lib/services";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
@@ -10,8 +11,8 @@ export function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-5">
-              <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-md shrink-0">
-                <span className="text-primary-foreground font-bold text-lg">S&T</span>
+              <div className="flex items-center justify-center w-10 h-10 rounded-md overflow-hidden shrink-0">
+                <Image src="/images/snt_logo.png" alt="S&T Construction" width={40} height={40} className="object-contain" />
               </div>
               <span className="font-bold text-lg">S&T Construction</span>
             </div>

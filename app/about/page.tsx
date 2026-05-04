@@ -18,14 +18,6 @@ const values = [
   { icon: Clock,  title: "Reliability",     description: "We show up on time, every time, and deliver projects on schedule." },
 ];
 
-const milestones = [
-  { year: "2009", event: "S&T Construction founded in Calgary" },
-  { year: "2012", event: "Expanded to include MEP consulting services" },
-  { year: "2015", event: "Reached 100 completed projects milestone" },
-  { year: "2018", event: "Expanded service area to Airdrie, Chestermere & Okotoks" },
-  { year: "2021", event: "Completed 400th project" },
-  { year: "2024", event: "Celebrating 15 years of service to Calgary" },
-];
 
 export default function AboutPage() {
   return (
@@ -98,10 +90,13 @@ export default function AboutPage() {
             {/* Shey Pahwa */}
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <div className="relative shrink-0 w-full sm:w-48">
-                <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden bg-secondary flex items-center justify-center">
-                  <div className="flex items-center justify-center w-20 h-20 rounded-full bg-primary/10">
-                    <span className="text-4xl font-bold text-primary">SP</span>
-                  </div>
+                <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/shey-pahwa.jpg"
+                    alt="Shey Pahwa - Co-Founder of S&T Construction"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
               <div className="flex-1">
@@ -147,38 +142,6 @@ export default function AboutPage() {
                   <p className="text-muted-foreground text-sm">{value.description}</p>
                 </CardContent>
               </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="py-14 md:py-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
-            <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-3">Our Journey</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
-              15 Years of Excellence
-            </h2>
-            <p className="text-muted-foreground text-base sm:text-lg">
-              From humble beginnings to becoming one of Calgary&apos;s most trusted
-              construction companies.
-            </p>
-          </div>
-          <div className="max-w-2xl mx-auto">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="flex gap-5 sm:gap-6 pb-7 last:pb-0 relative">
-                {index !== milestones.length - 1 && (
-                  <div className="absolute left-[23px] sm:left-[27px] top-12 w-0.5 h-[calc(100%-48px)] bg-border" />
-                )}
-                <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-primary text-primary-foreground rounded-full shrink-0 font-bold text-sm sm:text-base">
-                  {milestone.year.slice(2)}
-                </div>
-                <div className="pt-2 sm:pt-3">
-                  <p className="text-sm text-primary font-medium">{milestone.year}</p>
-                  <p className="text-foreground font-medium text-sm sm:text-base">{milestone.event}</p>
-                </div>
-              </div>
             ))}
           </div>
         </div>
