@@ -69,10 +69,10 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg overflow-hidden shadow-sm">
-                <Image src="/images/snt_logo.png" alt="S&T Construction" width={40} height={40} className="object-contain" />
+                <Image src="/images/snt_logo.png" alt="S&T Builders" width={40} height={40} className="object-contain" />
               </div>
               <div className="hidden sm:block">
-                <span className="font-bold text-lg text-foreground leading-tight">S&T Construction</span>
+                <span className="font-bold text-lg text-foreground leading-tight">S&T Builders</span>
                 <span className="block text-xs text-muted-foreground">Calgary, AB</span>
               </div>
             </Link>

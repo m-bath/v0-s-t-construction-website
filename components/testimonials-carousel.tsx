@@ -7,7 +7,7 @@ const testimonials = [
     location: "Calgary, AB",
     project: "Basement Development",
     rating: 5,
-    text: "S&T Construction transformed our unfinished basement into an amazing entertainment space. Tejpal and his team were professional, punctual, and the quality exceeded our expectations.",
+    text: "S&T Builders transformed our unfinished basement into an amazing entertainment space. Tejpal and his team were professional, punctual, and the quality exceeded our expectations.",
   },
   {
     name: "Amandeep Gill",
@@ -106,7 +106,7 @@ export function TestimonialsCarousel() {
               What Our Clients Say
             </h2>
             <p className="text-muted-foreground text-lg">
-              Hundreds of happy homeowners and businesses across Calgary trust S&T Construction for quality craftsmanship.
+              Hundreds of happy homeowners and businesses across Calgary trust S&T Builders for quality craftsmanship.
             </p>
           </div>
         </FadeIn>

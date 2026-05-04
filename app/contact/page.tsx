@@ -12,7 +12,7 @@ import { Phone, Mail, MapPin, Clock, Building, Globe } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact S&T Construction for your construction needs in Calgary, AB. Call (587) 973-6792 or fill out our contact form. Serving Calgary, Airdrie, Chestermere & Okotoks.",
+    "Contact S&T Builders for your construction needs in Calgary, AB. Call (587) 973-6792 or fill out our contact form. Serving Calgary, Airdrie, Chestermere & Okotoks.",
 };
 
 const contactInfo = [
@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: "Are you licensed and insured?",
-    a: "Absolutely. S&T Construction is fully licensed and insured, with comprehensive liability coverage and WCB coverage for all our workers.",
+    a: "Absolutely. S&T Builders is fully licensed and insured, with comprehensive liability coverage and WCB coverage for all our workers.",
   },
   {
     q: "How long does a typical basement development take?",
@@ -173,7 +173,7 @@ export default function ContactPage() {
               {/* Google Maps Embed */}
               <div className="mt-6 rounded-2xl overflow-hidden border border-border shadow-sm">
                 <iframe
-                  title="S&T Construction Location"
+                  title="S&T Builders Location"
                   src="https://maps.google.com/maps?q=215+Magnolia+Drive+SE+Calgary+AB&output=embed&z=15"
                   width="100%"
                   height="280"

@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   });
 
   await transporter.sendMail({
-    from: `"S&T Construction Website" <${process.env.GMAIL_USER}>`,
+    from: `"S&T Builders Website" <${process.env.GMAIL_USER}>`,
     to: process.env.GMAIL_USER,
     replyTo: email,
     subject: `Contact Form: ${subject}`,

@@ -10,7 +10,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-construction.jpg"
-          alt="S&T Construction - Professional Construction Services in Calgary"
+          alt="S&T Builders - Professional Construction Services in Calgary"
           fill
           className="object-cover"
           priority

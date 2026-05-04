@@ -8,7 +8,7 @@ import { CheckCircle, Award, Users, Clock, Shield, Target, Heart, ArrowRight } f
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about S&T Construction, Calgary's trusted construction contractor with 15+ years of experience. Meet owner Tejpal Singh and our commitment to quality craftsmanship.",
+  description: "Learn about S&T Builders, Calgary's trusted construction contractor with 15+ years of experience. Meet owner Tejpal Singh and our commitment to quality craftsmanship.",
 };
 
 const values = [
@@ -31,7 +31,7 @@ export default function AboutPage() {
               Building Calgary&apos;s Future Since 2009
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              S&T Construction is a family-owned business dedicated to delivering
+              S&T Builders is a family-owned business dedicated to delivering
               exceptional construction services to Calgary and surrounding communities.
               With over 15 years of experience, we&apos;ve built our reputation on quality
               workmanship and customer satisfaction.
@@ -49,7 +49,7 @@ export default function AboutPage() {
               Meet the Founders
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg">
-              S&T Construction is built on the combined expertise and vision of two dedicated industry professionals.
+              S&T Builders is built on the combined expertise and vision of two dedicated industry professionals.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden">
                   <Image
                     src="/images/tejpal-singh.jpg"
-                    alt="Tejpal Singh - Co-Founder of S&T Construction"
+                    alt="Tejpal Singh - Co-Founder of S&T Builders"
                     fill
                     className="object-cover"
                   />
@@ -93,7 +93,7 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden">
                   <Image
                     src="/images/shey-pahwa.jpg"
-                    alt="Shey Pahwa - Co-Founder of S&T Construction"
+                    alt="Shey Pahwa - Co-Founder of S&T Builders"
                     fill
                     className="object-cover"
                   />
@@ -103,7 +103,7 @@ export default function AboutPage() {
                 <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-1">Co-Founder & Director</p>
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">Shey Pahwa</h3>
                 <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
-                  Shey Pahwa brings extensive expertise in construction management, business operations, and client development. With a strong background in project planning and team leadership, Shey drives the strategic growth and operational excellence of S&T Construction.
+                  Shey Pahwa brings extensive expertise in construction management, business operations, and client development. With a strong background in project planning and team leadership, Shey drives the strategic growth and operational excellence of S&T Builders.
                 </p>
                 <div className="grid grid-cols-1 gap-2">
                   {["Construction Management", "Business Development", "Project Planning", "Team Leadership"].map((item) => (
@@ -128,7 +128,7 @@ export default function AboutPage() {
               What We Stand For
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg">
-              These core values guide everything we do at S&T Construction.
+              These core values guide everything we do at S&T Builders.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8">
@@ -173,7 +173,7 @@ export default function AboutPage() {
               </Button>
             </div>
             <div className="order-1 lg:order-2 relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src="/images/team.jpg" alt="S&T Construction Team" fill className="object-cover" />
+              <Image src="/images/team.jpg" alt="S&T Builders Team" fill className="object-cover" />
             </div>
           </div>
         </div>

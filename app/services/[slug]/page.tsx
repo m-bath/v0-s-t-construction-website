@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     title: `${service.title} Services in Calgary, AB`,
     description: `${service.shortDescription} Professional ${service.title.toLowerCase()} services in Calgary, Airdrie, Chestermere & Okotoks. Call for free estimate.`,
     openGraph: {
-      title: `${service.title} Services | S&T Construction Calgary`,
+      title: `${service.title} Services | S&T Builders Calgary`,
       description: service.shortDescription,
       images: [{ url: service.image }],
     },
@@ -169,7 +169,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       <section className="py-14 md:py-20 bg-secondary">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-12 text-center">
-            Why Choose S&T Construction for {service.title}
+            Why Choose S&T Builders for {service.title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">

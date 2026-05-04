@@ -18,19 +18,19 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'S&T Construction | Calgary Construction Contractor | Basement, Roofing, HVAC',
-    template: '%s | S&T Construction Calgary'
+    default: 'S&T Builders | Calgary Construction Contractor | Basement, Roofing, HVAC',
+    template: '%s | S&T Builders Calgary'
   },
   description: 'Professional construction services in Calgary, AB. Basement development, roofing, siding, HVAC, electrical, plumbing & MEP consulting. 15+ years experience. Free estimates. Serving Calgary, Airdrie, Chestermere, Okotoks.',
   keywords: ['Calgary construction', 'basement development Calgary', 'roofing Calgary', 'HVAC Calgary', 'electrical contractor Calgary', 'plumbing Calgary', 'home renovation Calgary', 'MEP consulting Alberta'],
-  authors: [{ name: 'S&T Construction' }],
-  creator: 'S&T Construction',
+  authors: [{ name: 'S&T Builders' }],
+  creator: 'S&T Builders',
   openGraph: {
     type: 'website',
     locale: 'en_CA',
     url: 'https://www.sntbuilder.com',
-    siteName: 'S&T Construction',
-    title: 'S&T Construction | Calgary Construction Contractor',
+    siteName: 'S&T Builders',
+    title: 'S&T Builders | Calgary Construction Contractor',
     description: 'Professional construction services in Calgary, AB. Basement development, roofing, HVAC, electrical, plumbing & MEP consulting. 15+ years experience.',
   },
   robots: {

@@ -6,7 +6,7 @@ const testimonials = [
     location: "Calgary, AB",
     project: "Basement Development",
     rating: 5,
-    text: "S&T Construction transformed our unfinished basement into an amazing entertainment space. Tejpal and his team were professional, punctual, and the quality of work exceeded our expectations. Highly recommend!",
+    text: "S&T Builders transformed our unfinished basement into an amazing entertainment space. Tejpal and his team were professional, punctual, and the quality of work exceeded our expectations. Highly recommend!",
   },
   {
     name: "Sarah Chen",
@@ -35,7 +35,7 @@ export function Testimonials() {
           </h2>
           <p className="text-muted-foreground text-lg">
             Don&apos;t just take our word for it. Here&apos;s what Calgary homeowners
-            have to say about working with S&T Construction.
+            have to say about working with S&T Builders.
           </p>
         </div>
 

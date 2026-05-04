@@ -12,9 +12,9 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-5">
               <div className="flex items-center justify-center w-10 h-10 rounded-md overflow-hidden shrink-0">
-                <Image src="/images/snt_logo.png" alt="S&T Construction" width={40} height={40} className="object-contain" />
+                <Image src="/images/snt_logo.png" alt="S&T Builders" width={40} height={40} className="object-contain" />
               </div>
-              <span className="font-bold text-lg">S&T Construction</span>
+              <span className="font-bold text-lg">S&T Builders</span>
             </div>
             <p className="text-background/70 text-sm leading-relaxed mb-5">
               Calgary&apos;s trusted construction partner with over 15 years of experience
@@ -94,7 +94,7 @@ export function Footer() {
         <div className="border-t border-background/10 mt-10 pt-7">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-center sm:text-left">
             <p className="text-sm text-background/60">
-              &copy; {new Date().getFullYear()} S&T Construction. All rights reserved.
+              &copy; {new Date().getFullYear()} S&T Builders. All rights reserved.
             </p>
             <p className="text-sm text-background/60">
               Licensed &amp; Insured | Calgary, Alberta
