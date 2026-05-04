@@ -84,7 +84,7 @@ export function ContactForm() {
                 id="phone"
                 name="phone"
                 type="tel"
-                placeholder="(403) 555-1234"
+                placeholder="(587) 973-6792"
                 value={formData.phone}
                 onChange={handleChange}
               />

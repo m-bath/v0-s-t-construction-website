@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_CA',
-    url: 'https://stconstruction.ca',
+    url: 'https://www.sntbuilder.com',
     siteName: 'S&T Construction',
     title: 'S&T Construction | Calgary Construction Contractor',
     description: 'Professional construction services in Calgary, AB. Basement development, roofing, HVAC, electrical, plumbing & MEP consulting. 15+ years experience.',

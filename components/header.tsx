@@ -44,13 +44,13 @@ export function Header() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-10 text-xs text-background/70">
             <div className="flex items-center gap-6">
-              <a href="tel:+14035551234" className="flex items-center gap-1.5 hover:text-background transition-colors">
+              <a href="tel:+15879736792" className="flex items-center gap-1.5 hover:text-background transition-colors">
                 <Phone className="h-3 w-3" />
-                (403) 555-1234
+                (587) 973-6792
               </a>
-              <a href="mailto:info@stconstruction.ca" className="flex items-center gap-1.5 hover:text-background transition-colors">
+              <a href="mailto:sntbuildersinfo@gmail.com" className="flex items-center gap-1.5 hover:text-background transition-colors">
                 <Mail className="h-3 w-3" />
-                info@stconstruction.ca
+                sntbuildersinfo@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-1.5">
@@ -237,9 +237,9 @@ export function Header() {
                   Contact
                 </Link>
                 <div className="pt-4 border-t border-border flex flex-col gap-3">
-                  <a href="tel:+14035551234" className="flex items-center gap-2 text-sm font-medium text-foreground">
+                  <a href="tel:+15879736792" className="flex items-center gap-2 text-sm font-medium text-foreground">
                     <Phone className="h-4 w-4" />
-                    (403) 555-1234
+                    (587) 973-6792
                   </a>
                   <Button asChild className="w-full">
                     <Link href="/quote" onClick={() => setMobileMenuOpen(false)}>Get Free Quote</Link>

@@ -106,9 +106,9 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="bg-transparent border-background/30 text-background hover:bg-background/10 hover:text-background">
-                <a href="tel:+14035551234">
+                <a href="tel:+15879736792">
                   <Phone className="mr-2 h-5 w-5" />
-                  (403) 555-1234
+                  (587) 973-6792
                 </a>
               </Button>
             </div>

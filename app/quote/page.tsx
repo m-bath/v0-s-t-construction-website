@@ -63,9 +63,9 @@ export default function QuotePage() {
                   <p className="text-sm text-muted-foreground mb-3">
                     Speak directly with our team for immediate assistance.
                   </p>
-                  <a href="tel:+14035551234" className="flex items-center gap-2 text-primary font-semibold hover:underline">
+                  <a href="tel:+15879736792" className="flex items-center gap-2 text-primary font-semibold hover:underline">
                     <Phone className="h-5 w-5" />
-                    (403) 555-1234
+                    (587) 973-6792
                   </a>
                 </CardContent>
               </Card>

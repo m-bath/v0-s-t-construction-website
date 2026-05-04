@@ -21,13 +21,13 @@ export function Footer() {
               delivering quality residential and commercial projects.
             </p>
             <div className="flex flex-col gap-2.5 text-sm">
-              <a href="tel:+14035551234" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
+              <a href="tel:+15879736792" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
                 <Phone className="h-4 w-4 shrink-0" />
-                (403) 555-1234
+                (587) 973-6792
               </a>
-              <a href="mailto:info@stconstruction.ca" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
+              <a href="mailto:sntbuildersinfo@gmail.com" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
                 <Mail className="h-4 w-4 shrink-0" />
-                info@stconstruction.ca
+                sntbuildersinfo@gmail.com
               </a>
               <div className="flex items-start gap-2 text-background/70">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />

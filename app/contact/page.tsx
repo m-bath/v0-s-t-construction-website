@@ -12,21 +12,21 @@ import { Phone, Mail, MapPin, Clock, Building, Globe } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact S&T Construction for your construction needs in Calgary, AB. Call (403) 555-1234 or fill out our contact form. Serving Calgary, Airdrie, Chestermere & Okotoks.",
+    "Contact S&T Construction for your construction needs in Calgary, AB. Call (587) 973-6792 or fill out our contact form. Serving Calgary, Airdrie, Chestermere & Okotoks.",
 };
 
 const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["(403) 555-1234"],
-    action: "tel:+14035551234",
+    details: ["(587) 973-6792"],
+    action: "tel:+15879736792",
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@stconstruction.ca"],
-    action: "mailto:info@stconstruction.ca",
+    details: ["sntbuildersinfo@gmail.com"],
+    action: "mailto:sntbuildersinfo@gmail.com",
   },
   {
     icon: Building,
@@ -90,7 +90,7 @@ const faqs = [
   },
   {
     q: "How do I get started?",
-    a: "Simply fill out the contact form, call us at (403) 555-1234, or request a free quote online. We'll schedule a site visit and provide a detailed estimate within a few business days.",
+    a: "Simply fill out the contact form, call us at (587) 973-6792, or request a free quote online. We'll schedule a site visit and provide a detailed estimate within a few business days.",
   },
   {
     q: "What quality standards do you follow?",
@@ -207,8 +207,8 @@ export default function ContactPage() {
                 </h2>
                 <p className="text-muted-foreground">
                   Can&apos;t find what you&apos;re looking for? Call us at{" "}
-                  <a href="tel:+14035551234" className="text-primary font-medium hover:underline">
-                    (403) 555-1234
+                  <a href="tel:+15879736792" className="text-primary font-medium hover:underline">
+                    (587) 973-6792
                   </a>{" "}
                   and we&apos;ll be happy to help.
                 </p>
