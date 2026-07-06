@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { services } from "@/lib/services";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Star } from "lucide-react";
 
 export function Footer() {
   return (
@@ -21,9 +21,9 @@ export function Footer() {
               delivering quality residential and commercial projects.
             </p>
             <div className="flex flex-col gap-2.5 text-sm">
-              <a href="tel:+15879736792" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
+              <a href="tel:+13683385559" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
                 <Phone className="h-4 w-4 shrink-0" />
-                (587) 973-6792
+                (368) 338-5559
               </a>
               <a href="mailto:info@sntbuilder.com" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
                 <Mail className="h-4 w-4 shrink-0" />
@@ -33,6 +33,15 @@ export function Footer() {
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                 <span>215 Magnolia Drive SE<br />Calgary, AB</span>
               </div>
+              <a
+                href="https://share.google/RxSyFWCwOZaE8PxwO"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-background/70 hover:text-background transition-colors"
+              >
+                <Star className="h-4 w-4 shrink-0" />
+                Find us on Google
+              </a>
             </div>
           </div>
 

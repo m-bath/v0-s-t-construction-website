@@ -7,20 +7,20 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Phone, Mail, MapPin, Clock, Building, Globe } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Building, Globe, Star } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact S&T Builders for your construction needs in Calgary, AB. Call (587) 973-6792 or fill out our contact form. Serving Calgary, Airdrie, Chestermere & Okotoks.",
+    "Contact S&T Builders for your construction needs in Calgary, AB. Call (368) 338-5559 or fill out our contact form. Serving Calgary, Airdrie, Chestermere & Okotoks.",
 };
 
 const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["(587) 973-6792"],
-    action: "tel:+15879736792",
+    details: ["(368) 338-5559"],
+    action: "tel:+13683385559",
   },
   {
     icon: Mail,
@@ -43,6 +43,12 @@ const contactInfo = [
     title: "Website",
     details: ["www.sntbuilder.com"],
     action: "https://www.sntbuilder.com",
+  },
+  {
+    icon: Star,
+    title: "Google Business Profile",
+    details: ["Read reviews & directions"],
+    action: "https://share.google/RxSyFWCwOZaE8PxwO",
   },
   {
     icon: Clock,
@@ -90,19 +96,19 @@ const faqs = [
   },
   {
     q: "How do I get started?",
-    a: "Simply fill out the contact form, call us at (587) 973-6792, or request a free quote online. We'll schedule a site visit and provide a detailed estimate within a few business days.",
+    a: "Simply fill out the contact form, call us at (368) 338-5559, or request a free quote online. We respond within 24 hours to schedule a site visit and get you a detailed estimate — fast.",
   },
   {
     q: "What quality standards do you follow?",
     a: "We follow all applicable Alberta Building Code requirements and use quality-grade materials on every project. Our team is licensed and experienced to ensure work is done right the first time, and we conduct thorough inspections throughout each project.",
   },
   {
-    q: "What is MEP consulting and do I need it?",
-    a: "MEP (Mechanical, Electrical, Plumbing) consulting helps ensure your systems are designed efficiently, safely, and to code — especially on new builds or large renovations. It's particularly valuable for commercial projects or complex residential builds.",
+    q: "How fast will I get my quote?",
+    a: "Fast quoting is a priority for us. Submit the form or call us and we'll get back to you within 24 hours with a detailed, no-obligation estimate — often much sooner.",
   },
   {
     q: "Can you handle both residential and commercial projects?",
-    a: "Yes. We serve both residential homeowners and commercial clients. Our team has experience on projects of all scales, from basement developments to full commercial MEP installations.",
+    a: "Yes. We serve both residential homeowners and commercial clients. Our team has experience on projects of all scales, from basement developments to full home and commercial renovations.",
   },
 ];
 
@@ -207,8 +213,8 @@ export default function ContactPage() {
                 </h2>
                 <p className="text-muted-foreground">
                   Can&apos;t find what you&apos;re looking for? Call us at{" "}
-                  <a href="tel:+15879736792" className="text-primary font-medium hover:underline">
-                    (587) 973-6792
+                  <a href="tel:+13683385559" className="text-primary font-medium hover:underline">
+                    (368) 338-5559
                   </a>{" "}
                   and we&apos;ll be happy to help.
                 </p>

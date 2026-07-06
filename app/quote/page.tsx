@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 };
 
 const benefits = [
-  { icon: CheckCircle, title: "Free Consultation",  description: "No-obligation consultation to discuss your project needs." },
-  { icon: Clock,       title: "Quick Response",     description: "We respond to all inquiries within 24 business hours." },
-  { icon: Shield,      title: "Transparent Pricing", description: "Detailed quotes with no hidden fees or surprises." },
+  { icon: Clock,       title: "24-Hour Quote Guarantee", description: "We know timing matters. You'll get a detailed quote back within 24 hours — often much sooner." },
+  { icon: CheckCircle, title: "Free Consultation",       description: "No-obligation consultation to discuss your project needs." },
+  { icon: Shield,      title: "Transparent Pricing",     description: "Detailed quotes with no hidden fees or surprises." },
 ];
 
 export default function QuotePage() {
@@ -21,13 +21,16 @@ export default function QuotePage() {
       <section className="py-14 md:py-20 bg-secondary">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-3">Free Estimate</p>
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
+              <Clock className="h-4 w-4" />
+              Quotes back within 24 hours
+            </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-5">
               Get Your Free Quote Today
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Fill out the form below and we&apos;ll provide you with a detailed,
-              no-obligation estimate for your construction project.
+              Fill out the form below and we&apos;ll get you a detailed,
+              no-obligation estimate for your project — fast. We respond within 24 hours.
             </p>
           </div>
         </div>
@@ -63,9 +66,9 @@ export default function QuotePage() {
                   <p className="text-sm text-muted-foreground mb-3">
                     Speak directly with our team for immediate assistance.
                   </p>
-                  <a href="tel:+15879736792" className="flex items-center gap-2 text-primary font-semibold hover:underline">
+                  <a href="tel:+13683385559" className="flex items-center gap-2 text-primary font-semibold hover:underline">
                     <Phone className="h-5 w-5" />
-                    (587) 973-6792
+                    (368) 338-5559
                   </a>
                 </CardContent>
               </Card>

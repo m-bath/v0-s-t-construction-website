@@ -38,12 +38,13 @@ export function Hero() {
 
           <p className="text-base sm:text-lg md:text-xl text-white/80 mb-7 sm:mb-8 leading-relaxed max-w-lg">
             Professional construction services for residential and commercial projects.
-            Quality craftsmanship backed by 15+ years of trusted experience.
+            Quality craftsmanship backed by 15+ years of trusted experience —
+            with free quotes back in your inbox within 24 hours.
           </p>
 
           {/* Trust Indicators */}
           <div className="flex flex-wrap gap-3 sm:gap-5 mb-8 sm:mb-10">
-            {["Licensed & Insured", "15+ Years Experience", "Free Estimates"].map((item) => (
+            {["Free 24-Hour Quotes", "Licensed & Insured", "15+ Years Experience"].map((item) => (
               <div key={item} className="flex items-center gap-2 text-white/90 text-sm font-medium">
                 <CheckCircle className="h-4 w-4 text-primary shrink-0" />
                 {item}
@@ -60,9 +61,9 @@ export function Hero() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="text-base bg-white/10 border-white/30 text-white hover:bg-white/20 hover:text-white backdrop-blur-sm">
-              <a href="tel:+15879736792">
+              <a href="tel:+13683385559">
                 <Phone className="mr-2 h-5 w-5" />
-                (587) 973-6792
+                (368) 338-5559
               </a>
             </Button>
           </div>

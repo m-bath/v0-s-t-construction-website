@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
 
   await transporter.sendMail({
     from: `"S&T Builders Website" <${process.env.GMAIL_USER}>`,
-    to: "info@sntbuilder.com",
+    to: "infosntbuilder@gmail.com",
     replyTo: email,
     subject: `Quote Request: ${service || "General"}`,
     html: `

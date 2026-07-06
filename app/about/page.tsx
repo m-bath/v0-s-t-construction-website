@@ -77,7 +77,7 @@ export default function AboutPage() {
                   A licensed construction contractor with over 15 years of hands-on experience in residential and commercial construction. Tejpal oversees project execution, quality control, and client relations across all S&T projects.
                 </p>
                 <div className="grid grid-cols-1 gap-2">
-                  {["Licensed Contractor", "MEP Specialist", "Fully Insured", "WCB Coverage"].map((item) => (
+                  {["Licensed Contractor", "Renovation Specialist", "Fully Insured", "WCB Coverage"].map((item) => (
                     <div key={item} className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary shrink-0" />
                       <span className="text-foreground text-sm">{item}</span>

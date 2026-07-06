@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     default: 'S&T Builders | Calgary Construction Contractor | Basement, Roofing, HVAC',
     template: '%s | S&T Builders Calgary'
   },
-  description: 'Professional construction services in Calgary, AB. Basement development, roofing, siding, HVAC, electrical, plumbing & MEP consulting. 15+ years experience. Free estimates. Serving Calgary, Airdrie, Chestermere, Okotoks.',
-  keywords: ['Calgary construction', 'basement development Calgary', 'roofing Calgary', 'HVAC Calgary', 'electrical contractor Calgary', 'plumbing Calgary', 'home renovation Calgary', 'MEP consulting Alberta'],
+  description: 'Professional construction services in Calgary, AB. Basement development, roofing, siding, HVAC, electrical & plumbing. 15+ years experience. Free estimates within 24 hours. Serving Calgary, Airdrie, Chestermere, Okotoks.',
+  keywords: ['Calgary construction', 'basement development Calgary', 'roofing Calgary', 'HVAC Calgary', 'electrical contractor Calgary', 'plumbing Calgary', 'home renovation Calgary', 'construction contractor Alberta'],
   authors: [{ name: 'S&T Builders' }],
   creator: 'S&T Builders',
   openGraph: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: 'https://www.sntbuilder.com',
     siteName: 'S&T Builders',
     title: 'S&T Builders | Calgary Construction Contractor',
-    description: 'Professional construction services in Calgary, AB. Basement development, roofing, HVAC, electrical, plumbing & MEP consulting. 15+ years experience.',
+    description: 'Professional construction services in Calgary, AB. Basement development, roofing, HVAC, electrical & plumbing. 15+ years experience. Fast, free quotes within 24 hours.',
   },
   robots: {
     index: true,

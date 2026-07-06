@@ -109,7 +109,7 @@ export function QuoteForm({ preselectedService, variant = "full" }: QuoteFormPro
                 name="phone"
                 type="tel"
                 required
-                placeholder="(587) 973-6792"
+                placeholder="(368) 338-5559"
                 value={formData.phone}
                 onChange={handleChange}
               />

@@ -10,8 +10,8 @@ import { services } from "@/lib/services";
 import { ArrowRight, Shield, Clock, Award, Users, MapPin } from "lucide-react";
 
 const whyUs = [
+  { icon: Clock,  title: "Fast 24-Hour Quotes",  desc: "Send us your project and get a detailed, no-obligation quote back within 24 hours." },
   { icon: Shield, title: "Licensed & Insured",   desc: "Fully licensed and insured for your peace of mind on every project." },
-  { icon: Clock,  title: "On-Time Delivery",     desc: "We respect your time and deliver projects on schedule, every time." },
   { icon: Award,  title: "Quality Workmanship",  desc: "Premium materials and expert craftsmanship on every project." },
   { icon: Users,  title: "Customer First",       desc: "Clear communication and customer satisfaction are our top priorities." },
 ];

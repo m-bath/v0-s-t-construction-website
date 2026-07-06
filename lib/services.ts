@@ -136,22 +136,6 @@ export const services: Service[] = [
     ],
     image: "/images/plumbing.jpg",
     icon: "droplet"
-  },
-  {
-    id: "mep-consulting",
-    title: "MEP Consulting Services",
-    shortDescription: "Expert mechanical, electrical, and plumbing consulting for construction projects of all scales.",
-    fullDescription: "Leverage our 15+ years of industry experience with our comprehensive MEP consulting services. We provide expert guidance on mechanical, electrical, and plumbing systems for new construction and renovation projects, ensuring optimal design, efficiency, and code compliance from concept to completion.",
-    features: [
-      "System design consultation",
-      "Energy efficiency analysis",
-      "Code compliance review",
-      "Project coordination",
-      "Cost estimation services",
-      "Construction oversight"
-    ],
-    image: "/images/mep-consulting.jpg",
-    icon: "clipboard"
   }
 ];
 

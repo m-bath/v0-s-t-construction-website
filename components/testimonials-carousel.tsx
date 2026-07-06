@@ -54,9 +54,9 @@ const testimonials = [
   {
     name: "Kevin Sharma",
     location: "Strathmore, AB",
-    project: "MEP Consulting",
+    project: "Commercial Renovation",
     rating: 5,
-    text: "Engaged S&T for MEP consulting on our commercial renovation. Their expertise saved us significant cost through smart system design and energy-efficient specifications. True professionals.",
+    text: "S&T handled the full renovation of our commercial space — mechanical, electrical, and plumbing all coordinated seamlessly. Their expertise saved us significant cost through smart planning and energy-efficient work. True professionals.",
   },
   {
     name: "Brenda & Clint Foley",
